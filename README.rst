@@ -28,6 +28,14 @@ and the Python module without CMake_ or ``make``; see the
 
 Compilation
 -----------
+Compiling with MS Visual Studio
+
+1) Create a new empty project.
+2) Delete the cpp file that is automatically generated
+3) In "Solution Explorer", right click on "Source File" and Select ADD-->EXISTING ITEMS to include all the source files except plgen.cpp
+4) In "Solution Explorer", right click on all *.cpp files and go to properties--> C/C++ --> Precompiled Headers , select "Not Using Precompiled Headers"
+
+
 
 Compiling with CMake
 ^^^^^^^^^^^^^^^^^^^^
