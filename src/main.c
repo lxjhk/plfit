@@ -25,7 +25,11 @@
 #include <string.h>
 #include <time.h>
 #include "getopt.h"
-#include "plfit.h"
+
+#ifdef _MSC_VER
+#pragma warning(disable: 4244 4018 4005)
+#define  _CRT_SECURE_NO_WARNINGS
+#endif
 
 typedef struct _cmd_options_t {
     double alpha_min;
